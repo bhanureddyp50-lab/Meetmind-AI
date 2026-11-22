@@ -1,0 +1,27 @@
+from fastapi import FastAPI, UploadFile, File
+import whisper
+
+app = FastAPI()
+
+# Load Whisper model when server starts
+model = whisper.load_model("base")
+
+@app.get("/")
+def home():
+    return {"message": "MeetMind AI Backend Running"}
+
+@app.post("/upload-audio")
+async def upload_audio(file: UploadFile = File(...)):
+    audio_path = f"audio_{file.filename}"
+    
+    # Save uploaded audio file locally
+    with open(audio_path, "wb") as audio:
+        audio.write(await file.read())
+        
+    # Transcribe audio using Whisper
+    result = model.transcribe(audio_path)
+    
+    return {
+        "filename": file.filename,
+        "text": result["text"]
+    }
