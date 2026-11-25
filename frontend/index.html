@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeetMind AI - Meeting Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MeetMind AI</h1>
+        <h2>Intelligent Meeting Action Tracker</h2>
+    </header>
+
+    <div class="container">
+
+        <p>Upload your meeting recording and get AI-powered summaries and action items.</p>
+
+        <h3>Upload Meeting Recording</h3>
+
+        <input type="file" id="audioFile" accept=".mp3,.wav,.m4a,.mp4">
+
+        <br> 
+
+        <div id="transcription"></div>
+        <button>Upload Meeting</button>
+        <div id="result"></div>
+        <div id="history">
+    <h2>Meeting History</h2>
+    <p>Your previous meetings will appear here.</p>
+</div>
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

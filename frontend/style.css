@@ -1,0 +1,126 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    background: #243b80;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin: 25px 0;
+}
+
+button {
+    background: #243b80;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #17295c;
+}
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f6fb;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#result h2 {
+    color: #243b80;
+    margin-bottom: 15px;
+}
+
+#result h3 {
+    color: #243b80;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#result p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+#history {
+    background: white;
+    width: 80%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#history h2 {
+    color: #243b80;
+    margin-bottom: 15px;
+}
+#history div {
+    border: 1px solid #e0e5f0;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #f9faff;
+}
+
+#history h3 {
+    color: #243b80;
+    margin-bottom: 10px;
+}
+
+#history p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+.meeting-card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.meeting-card h3 {
+    color: #263a5b;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.meeting-card p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 15px;
+}
